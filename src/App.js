@@ -1,17 +1,20 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header'; 
+import Technologies from './Technologies';
+import Footer from './Footer';
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <p/>
-      My first React App. God may help me.
-      <p/>
-      <ul>
-       Let's be honest...this is really-really difficult 
-      </ul>
-    </div>
+     <div>
+        <Header />
+        <Technologies />
+        <Footer/>
+     </div>
+  
   );
 }
-
 export default App;
