@@ -1,14 +1,18 @@
-.header {
-  grid-area: h;
+.footer {
+    grid-area: f;
   background: #fff;
   ;
   box-shadow: 0 0 10px #e1e1e1;
   background-image: none;
   background-color: #f6f6f5;
-
 }
 
-.header img {
+.logo img{
   width: 160px;
   height: 42px;
+  position:absolute;
+}
+
+.author{
+  text-align: right;
 }

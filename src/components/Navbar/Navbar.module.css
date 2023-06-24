@@ -1,0 +1,10 @@
+.nav{
+    grid-area: n;
+    box-shadow: 0 0 10px #e1e1e1;
+    background-image: none;
+    background-color: #f6f6f5;
+  }
+
+  .item {
+    color:black;
+} 

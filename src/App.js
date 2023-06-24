@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Profile from './components/Profile';
+import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
+import Profile from './components/Profile/Profile';
+import Footer from './components/Footer/Footer'
 import './App.css';
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
          <Header />
          <Navbar />
          <Profile />
+         <Footer/>
       </div>);
 }
 export default App;

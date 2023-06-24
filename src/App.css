@@ -1,16 +1,17 @@
 .app-wrapper {
-
   display: grid;
-  width: 1200px;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: auto 1fr;
+  grid-template-rows: 100px 1fr 100px; 
+  /* 3 рядя */
+  grid-template-columns: 200px 
+                          1fr;
+  /* 2 колонки */
+  
   grid-gap: 2vw;
   height: 100vh;
-
-
+  
+  
   grid-template-areas:
-    "h h"
-    "n c";
-
-
+    "h h "
+    "n c "
+    "f f "
 }
