@@ -6,6 +6,8 @@ import Profile from './components/Profile/Profile';
 import Footer from './components/Footer/Footer'
 import './App.css';
 
+
+
 const App = () => {
    return (
       <div className='app-wrapper'>
