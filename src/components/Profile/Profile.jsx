@@ -4,7 +4,7 @@ import MyPosts from "./My Posts/MyPosts";
 
 const Profile = () => {
   return (
-    <div className={classes.content}>
+    <div>
       <div>
         <img src="https://jusan.kz/file-server/filename?dir=slider&filename=mob_1440x570_ru.webp" />
       </div>

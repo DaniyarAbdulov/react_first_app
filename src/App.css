@@ -1,17 +1,32 @@
+
 .app-wrapper {
+
   display: grid;
-  grid-template-rows: 100px 1fr 100px; 
+  grid-template-rows: 50px 1fr 80px;
   /* 3 рядя */
-  grid-template-columns: 200px 
-                          1fr;
+  grid-template-columns: 100px 1fr;
   /* 2 колонки */
-  
+
   grid-gap: 2vw;
   height: 100vh;
+
   
-  
+
+
   grid-template-areas:
     "h h "
     "n c "
     "f f "
+}
+
+.app-wrapper-content {
+  .content {
+    grid-area: c;
+  }
+  box-shadow: 0 0 10px #e1e1e1;
+  background-image: none;
+  background-color: #f6f6f5;
+  
+
+
 }

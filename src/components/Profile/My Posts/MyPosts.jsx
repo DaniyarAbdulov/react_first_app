@@ -8,15 +8,21 @@ const MyPosts = () => {
     <div>
       My posts
       <div>
-        <textarea></textarea>
-        <button>Add post</button>
+ 
+        <button>Add post
+          <input></input>
+        </button>
       </div>
 
       <div className={classes.posts}>
-        <Post />
+       <Post message="Hello world"/>
+       <Post message="Hello world"/>
+       <Post message="My first app"/>
+       <Post message="Where's my God?"/>
+       <Post message="Once you're in the Hell. Only the Devil can help you out"/>
+
       </div>
-
-
+    
     </div>
 
 
