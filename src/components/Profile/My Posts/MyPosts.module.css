@@ -2,5 +2,10 @@
   
         font-family:'Roboto', sans-serif;
         font-style: italic;
+        padding: 10px;
 
+}
+
+.postsBlock{
+        padding: 10px;
 }
