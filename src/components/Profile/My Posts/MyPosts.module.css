@@ -1,11 +1,37 @@
-.posts{
-  
-        font-family:'Roboto', sans-serif;
+.posts {
+
+        font-family: 'Roboto', sans-serif;
         font-style: italic;
         padding: 10px;
 
 }
 
-.postsBlock{
+.postsBlock {
         padding: 10px;
+}
+
+.button {
+        background-color: transparent;
+        color: #000;
+        border-radius: 4px;
+        padding: 6px 12px;
+        border: 1px solid #e1e1e1;
+        margin-left: 435px;
+
+
+}
+
+.button:hover {
+        background-color: black;
+        color: white;
+}
+
+
+.textField {
+        width: 500px;
+        height: 50px;
+        background-color: white;
+
+
+
 }
