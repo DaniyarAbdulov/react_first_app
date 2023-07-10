@@ -9,6 +9,8 @@ import './App.css';
 
 
 const App = (props) => {
+
+
    return (
       <BrowserRouter>
          <div className='app-wrapper'>
@@ -19,10 +21,9 @@ const App = (props) => {
                <h1>Hello!</h1>
                <h2>тут сделаем приколы всякие</h2>
                <h3>например, добавим приколы</h3>
-               
                <Routes>
-                  <Route path="/dialogs" element={<Dialogs dialogsData={props.dialogsData} messagesData={props.messagesData} />} />
-                  <Route path="/profile" element={<Profile />} />
+                  <Route path="/dialogs" element={<Dialogs dialogs={props.state.dialogsPage.dialogs} messages={props.state.dialogsPage.messages} />} />
+                  <Route path="/profile" element={<Profile posts={props.state.profilePage.posts} />} />
                </Routes>
             </div>
          </div>
