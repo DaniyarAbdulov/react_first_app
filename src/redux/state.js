@@ -18,10 +18,13 @@ let state = {
                 message: "Once you're in the Hell. Only the Devil can help you out}",
             },
         ],
-
-
-
-    }
+    },
 }
 
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 5, message: postMessage,
+    };
+    state.profilePage.posts.push(newPost);
+}
 export default state;

@@ -34,6 +34,8 @@ const Navbar = () => {
       <div className={classes.item}>
         <a>Settings</a>
       </div>
+      
+
     </nav>
   );
 };
