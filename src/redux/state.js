@@ -1,5 +1,6 @@
-import { rerenderEntireTree } from "../render";
-
+let rerenderEntireTree = () => {
+    console.log('hi')
+}
 let state = {
     dialogsPage: {
         messages: [{ id: 1, message: "Hello Kid!" },
@@ -20,14 +21,25 @@ let state = {
                 message: "Once you're in the Hell. Only the Devil can help you out}",
             },
         ],
+        newPostText: ' '
     },
 }
 
-export let addPost = (postMessage) => {
+export const addPost = () => {
     let newPost = {
-        id: 5, message: postMessage,
+        id: 5, message: state.profilePage.newPostText,
     };
     state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText = '';
     rerenderEntireTree(state);
 }
+export const updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
+}
+
+export const subscribe = (observer) => {
+    rerenderEntireTree = observer;
+} 
+
 export default state;
