@@ -7,7 +7,8 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import Footer from "./components/Footer/Footer";
 import CurrencyStats from "./components/Currency/Currency";
 import "./App.css";
-
+import BirthDay from "./components/BirthDay/BirthDay";
+import Rookies from "./components/Rookies/Rookies";
 const App = (props) => {
   return (
     <BrowserRouter>
@@ -17,6 +18,8 @@ const App = (props) => {
         <Footer />
       <div className="table">
         <CurrencyStats />
+        <BirthDay />
+        <Rookies/>
       </div>
         <div className="app-wrapper-content">
           <Routes>
@@ -34,8 +37,7 @@ const App = (props) => {
               element={
                 <Profile
                   profilePage={props.state.profilePage}
-                  addPost={props.addPost}
-                  updateNewPostText={props.updateNewPostText}
+                  dispatch={props.dispatch}
                 />
               }
             />

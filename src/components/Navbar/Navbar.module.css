@@ -9,9 +9,15 @@
 .item {
   color: black;
   text-decoration: none;
+  
 }
-
+.item:hover {
+  color: orange;
+  
+  
+}
 .active {
-  color: #42a5f5;
+  color: orange;
   text-decoration: none;
+  
 }
