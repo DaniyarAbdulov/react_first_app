@@ -9,6 +9,8 @@ import CurrencyStats from "./components/Currency/Currency";
 import "./App.css";
 import BirthDay from "./components/BirthDay/BirthDay";
 import Rookies from "./components/Rookies/Rookies";
+
+
 const App = (props) => {
   return (
     <BrowserRouter>
@@ -16,11 +18,11 @@ const App = (props) => {
         <Header />
         <Navbar />
         <Footer />
-      <div className="table">
-        <CurrencyStats />
-        <BirthDay />
-        <Rookies/>
-      </div>
+        <div className="table">
+          <CurrencyStats />
+          <BirthDay />
+          <Rookies />
+        </div>
         <div className="app-wrapper-content">
           <Routes>
             <Route
